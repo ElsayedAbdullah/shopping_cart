@@ -1,5 +1,36 @@
-$greenColor: green;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-p {
-  color: $greenColor;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#root {
+  height: 100vh;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 50px 1fr 50px;
+  height: 100%;
+}
+
+.header-footer-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 94, 255);
+  color: #fff;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
 }
