@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(0, 94, 255);
+  background-color: #673ab7;
   color: #fff;
 }
 
@@ -31,4 +31,25 @@ main {
   grid-area: main;
 }
 
+.container {
+  width: 90%;
+  margin: auto;
+}
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.wrapper .products {
+  width: 68%;
+}
+
+.wrapper .sidebar {
+  width: 30%;
+}
+
+.text-center {
+  text-align: center;
+}
