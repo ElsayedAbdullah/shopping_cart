@@ -27,14 +27,19 @@ body {
   color: #fff;
 }
 
-header {
-  grid-area: header;
-}
-
 main {
   grid-area: main;
 }
 
-footer {
-  grid-area: footer;
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .products {
+  width: 68%;
+  background-color: teal;
+}
+.wrapper .sidebar {
+  width: 30%;
+  background-color: violet;
 }
