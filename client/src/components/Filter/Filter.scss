@@ -1,0 +1,28 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.filter-products {
+  border: 1px solid #673ab7;
+  .content {
+    padding: 20px;
+  }
+  h4 {
+    background-color: #673ab7;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .sizes-filter,
+  .order-filter {
+    margin-top: 20px;
+  }
+}

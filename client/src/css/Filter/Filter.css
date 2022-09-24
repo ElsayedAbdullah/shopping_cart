@@ -1,0 +1,21 @@
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.filter-products h2 {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.filter-products .sizes-filter,
+.filter-products .order-filter {
+  margin-top: 20px;
+}

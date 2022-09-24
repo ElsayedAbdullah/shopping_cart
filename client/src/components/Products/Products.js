@@ -28,7 +28,7 @@ const Products = ({ products }) => {
             </p>
             <span className="price">${product.price}</span>
           </div>
-          <div className="text-center">
+          <div className="text-center add-to-cart">
             <button className="btn">Add to Cart</button>
           </div>
         </div>
