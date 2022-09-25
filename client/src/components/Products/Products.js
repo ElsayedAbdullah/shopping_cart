@@ -3,7 +3,7 @@ import { useState } from "react";
 import ProductModal from "./ProductModal";
 import "./Products.scss";
 
-const Products = ({ products }) => {
+const Products = ({ products, addToCart }) => {
   const [product, setProduct] = useState("");
 
   const openModal = product => {
@@ -29,7 +29,7 @@ const Products = ({ products }) => {
             <span className="price">${product.price}</span>
           </div>
           <div className="text-center add-to-cart">
-            <button className="btn">Add to Cart</button>
+            <button className="btn" onClick={()=>addToCart(product)}>Add to Cart</button>
           </div>
         </div>
       ))}
