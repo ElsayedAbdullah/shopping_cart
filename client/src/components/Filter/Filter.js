@@ -6,10 +6,10 @@ const Filter = (props) => {
     <div className="filter-products">
       <h4 className="filter-title">Filter</h4>
       <div className="content">
-        <p className="products-num">Number of Products 4</p>
+        <p className="products-num">Number of Products {props.numOfProducts}</p>
         <div className="sizes-filter">
           <label>Sizes</label>
-          <select className="select-filter" size={props.size} onChange={props.handleFilterBySize}>
+          <select className="select-filter" value={props.size} onChange={props.handleFilterBySize}>
             <option value="ALL">ALL</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -21,7 +21,7 @@ const Filter = (props) => {
         </div>
         <div className="order-filter">
           <label>Order</label>
-          <select className="select-filter" onChange={props.handleFilterBySort}>
+          <select className="select-filter" value={props.sort} onChange={props.handleFilterBySort}>
             <option value="latest">Latest</option>
             <option value="highest">Highest</option>
             <option value="lowest">Lowest</option>
