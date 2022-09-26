@@ -18,13 +18,14 @@
       justify-content: space-between;
       flex: 1;
     }
-    .remove {
-      background-color: rgb(253, 57, 57);
-      color: #fff;
-      border: 0;
-      padding: 10px 20px;
-      border-radius: 6px;
-      cursor: pointer;
+  }
+  .cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    .total {
+      font-size: 25px;
     }
   }
 }
