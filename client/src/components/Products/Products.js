@@ -29,7 +29,7 @@ const Products = ({ products, addToCart }) => {
             <span className="price">${product.price}</span>
           </div>
           <div className="text-center add-to-cart">
-            <button className="btn" onClick={()=>addToCart(product)}>Add to Cart</button>
+            <button className="btn btn-primary" onClick={()=>addToCart(product)}>Add to Cart</button>
           </div>
         </div>
       ))}

@@ -53,3 +53,19 @@ main {
 .text-center {
   text-align: center;
 }
+
+.btn {
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #2196f3;
+  color: #fff;
+}
+.btn-danger {
+  background-color: rgba(245, 49, 49, 0.84);
+  color: #fff;
+}
