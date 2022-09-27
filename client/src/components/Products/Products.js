@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import ProductModal from "./ProductModal";
+import Fade from 'react-reveal/Fade'; // Importing Fade effect
 import "./Products.scss";
 
 const Products = ({ products, addToCart }) => {
@@ -14,6 +15,7 @@ const Products = ({ products, addToCart }) => {
     setProduct(false);
   };
   return (
+    <Fade cascade left>
     <div className="products">
       {products.map(product => (
         <div key={product.id} className="product-item">
@@ -36,6 +38,8 @@ const Products = ({ products, addToCart }) => {
 
       <ProductModal product={product} closeModal={closeModal} />
     </div>
+
+    </Fade>
   );
 };
 
