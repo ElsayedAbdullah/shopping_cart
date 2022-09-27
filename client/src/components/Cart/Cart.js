@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import Checkout from "../Checkout/Checkout";
+import Bounce from "react-reveal/Bounce"; // Importing Bounce effect
 import "./Cart.scss";
+
 
 const Cart = props => {
   const [showForm, setShowForm] = useState(false);
@@ -9,6 +11,7 @@ const Cart = props => {
   return (
     <div className="cart-wrapper">
       <h2>{props.cartItems.length ? <p>There is {props.cartItems.length} products in the cart</p> : "Cart is Empty"}</h2>
+      <Bounce clear cascade>
       <div className="cart-items">
         {props.cartItems.map(item => (
           <div key={item.id} className="cart-item">
@@ -26,6 +29,7 @@ const Cart = props => {
           </div>
         ))}
       </div>
+      </Bounce>
       {props.cartItems.length > 0 && (
         <div className="cart-footer">
           <div className="total">
